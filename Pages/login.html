@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Meu Site</title>
+    <link rel="stylesheet" href="/Assets/style/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="facebook-header">
+        <img src="/Assets/img/facebook-logo.png" alt="Facebook Logo" />
+        <h2>Faça login na sua conta</h2>
+      </div>
+      <form>
+        <div class="form-group">
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            class="input-field"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="senha"
+            placeholder="Senha"
+            class="input-field"
+          />
+        </div>
+
+        <div class="login-button-container">
+          <button type="button" onclick="login()" class="login-button">
+            Login
+          </button>
+        </div>
+      </form>
+      <p class="small-text">
+        Esqueceu a senha? <a href="#">Redefinir senha</a>
+      </p>
+      <button
+        onclick="window.location.href='/signup.html'"
+        class="switch-page-button"
+      >
+        Não tem uma conta? Cadastre-se
+      </button>
+    </div>
+    <script src="/Assets/scripts/script.js"></script>
+  </body>
+</html>
